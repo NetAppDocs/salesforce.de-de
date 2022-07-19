@@ -1,0 +1,38 @@
+---
+sidebar: sidebar 
+permalink: task_reauthenticating.html 
+keywords: netapp, saas backup, reauthenticating, reauthentication, tokens, refresh, expired, access 
+summary: Sie können ein sofortiges Backup oder eine unmittelbare Wiederherstellung abbrechen. Sie können ein geplantes Backup nicht abbrechen. 
+---
+= Neuauthentifizierung
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Salesforce ermöglicht die Verwendung von maximal 5 Token, bevor Sie Ihre Anmeldedaten erneut authentifizieren müssen. Wenn Sie versuchen, eine Sicherung oder Wiederherstellung zu starten und alle Token verwendet wurden, erhalten Sie die folgende Fehlermeldung: „Token für abgelaufenen Zugriff/Aktualisierung“. Wenn Sie diese Nachricht erhalten, müssen Sie sich erneut authentifizieren, bevor Sie fortfahren.
+
+
+toc::[]
+.Schritte
+. Klicken Sie oben links im Dashboard auf image:configure_icon.jpg["Einstellungssymbol"].
+. Wählen Sie unter *DIENSTEINSTELLUNGEN* die Option *Salesforce* aus.
+. KLICKEN SIE AUF *ZUGRIFFSBERECHTIGUNGEN GEWÄHREN*.
++
+image:grant_access_permissions.jpg["Symbol Zugriffsberechtigungen Gewähren"]
+
+. Klicken Sie auf die Registerkarte *PRODUCTION* oder *SANDBOX*, um die Instanz auszuwählen, die Sie neu authentifizieren müssen.
+. Klicken Sie Auf image:re_authenticate.jpg["Symbol für die erneute Authentifizierung"].
++
+Sie werden zu *Salesforce* weitergeleitet, um Ihre Anmeldedaten einzugeben. Nach der Neuauthentifizierung können Sie Ihren Backup- oder Restore-Job initiieren.
+
+

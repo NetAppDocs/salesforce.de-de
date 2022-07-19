@@ -1,0 +1,48 @@
+---
+sidebar: sidebar 
+permalink: task_purging_data_&_metadata.html 
+keywords: netapp, saas backup, salesforce, sandbox, production, instance, purge, purging, purging data, metadata, retention, metadata retention, retain and purge, show purged list 
+summary: Löschen von Daten von Salesforce-Organisationen 
+---
+= Daten und Metadaten werden entfernt
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Löschen von Daten von Salesforce-Organisationen Das Löschen Ihrer Daten auf Unternehmensebene wird unter *Kontoeinstellungen* gemanagt.
+
+Metadaten-Aufbewahrung und -Säuberungen werden automatisch von SaaS Backup für Salesforce gemanagt. Metadaten werden 90 Tage aufbewahrt. Nach 90 Tagen werden die Metadaten gelöscht.
+
+
+
+== Daten Werden Entfernt
+
+Es besteht immer die Möglichkeit, Daten von einer bestimmten Organisation wie einer nicht genutzten Salesforce-Organisation zu löschen.
+
+Sie können Daten löschen, um Produktions- oder Sandbox-Instanzen zu aktualisieren.
+
+Sie können auch eine weitere Produktions- oder Sandbox-Instanz hinzufügen. Dazu müssen Sie eine Produktions- oder Sandbox-Instanz löschen.
+
+.Schritte
+. Klicken Sie Auf image:icon_gear.gif["Zahnrad-Symbol"] Und klicken Sie dann auf image:account_settings.gif["Kontoeinstellungen"].
+. Klicken Sie auf *beibehalten und löschen*.
+. Scrollen Sie unter *beibehalten und löschen* nach unten zu *Daten löschen*.
+. Wählen Sie die Option *Anbieter* und *Dienstname* aus.
+. Suchen Sie nach der Unternehmens-ID, oder wählen Sie sie aus.
+. Klicken Sie Auf *Speichern*. Es wird eine Meldung angezeigt, mit der Sie den Löschvorgang bestätigen oder abbrechen können.
+. Klicken Sie auf *Ja*, um die Löschung zu bestätigen. Wenn Sie auf *Ja* klicken, können Sie die gelöschten Daten für bis zu sieben Tage wiederherstellen.
+. Klicken Sie auf *Liste der gelöschten Säuberungen anzeigen*, um eine Liste der geplanten Säuberungen anzuzeigen.
++
+image:purged_list_example.gif["Beispiel einer Liste mit gelöschten Daten"]
+
+

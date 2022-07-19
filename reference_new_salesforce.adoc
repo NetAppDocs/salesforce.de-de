@@ -1,0 +1,69 @@
+---
+sidebar: sidebar 
+permalink: reference_new_salesforce.html 
+keywords: 'what"s new, features, new, release notes, enhancements' 
+summary: SaaS Backup für Salesforce hat in regelmäßigen Abständen eine neue Version vorgestellt, die Ihnen neue Funktionen, Verbesserungen und Fehlerbehebungen bietet. 
+---
+= Neue Funktionen und Updates
+:toc: macro
+:hardbreaks:
+:toclevels: 2
+:allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Die folgenden neuen Features und Updates wurden zu dieser Version von NetApp SaaS Backup für Salesforce hinzugefügt.
+
+
+
+== Dezember 2020
+
+* SaaS Backup für Salesforce stellt jetzt Metadaten wieder her. Diese Funktionserweiterung umfasst Wiederherstellung auf Unternehmensebene und granulare Wiederherstellung von einzelnen oder mehreren Objekten für Ihre Metadaten.
++
+Wiederherstellung von Metadaten auf Unternehmensebene
+
++
+image:org_level_restore_metadata_option_cropped.png["Option zur Wiederherstellung von Metadaten auf Organisationsebene gekürzt"]
+
++
+Granulare Wiederherstellung von Metadaten
+
++
+image:restore_options_export-restore_metadata.png["Optionen für Export und Wiederherstellung von Metadaten"]
+
++
+link:task_managing_restores.html["Wiederherstellen von Daten"]
+
+* Die *Backup Zusammenfassung* ist eine Erweiterung in SaaS Backup für Salesforce, die Ihnen die Gesamtzahl aller erstellten, aktualisierten und gelöschten Datensätze gibt. Damit können Sie überprüfen, ob die Anzahl Ihrer Backup-Datensätze mit der Anzahl Ihres Salesforce-Kontos übereinstimmt.
++
+link:task_viewing_backup_records.html["Anzeigen von Backup-Datensätzen"]
+
+
+
+
+
+== Oktober 2020
+
+* SaaS Backup für Salesforce sichert jetzt Metadaten. Diese Funktionserweiterung umfasst Backups, Wiederherstellungen auf Objekt- und Organisationsebene sowie Säuberungen für die von Ihnen erstellten Metadaten. Die Benutzeroberfläche hat auch eine neue Registerkarte *Metadatentypen und Komponenten* wo Sie Ihre Metadaten-Backups sehen können. Auf diesen Seiten finden Sie weitere Informationen zu dieser neuen Funktion:
++
+link:task_enable_disable_metadata_backups.html["Aktivieren und Deaktivieren von Metadaten"]
+link:task_managing_restores.html["Wiederherstellen von Daten"]
+
+* Im Oktober 2020 können Sie Ihre Daten löschen. Metadaten werden nach 90 Tagen automatisch gelöscht.
++
+link:task_purging_data_&_metadata.html["Daten und Metadaten werden entfernt"]
+
+
+
+
+
+== Februar 2020
+
+Sie können jetzt Daten auf Objekt- und Organisationsebene exportieren. Für jeden Export können Sie Anlagen, Ergebnisse und Statistiken aus einem früheren Backup herunterladen.link:task_downloading_export_data.html["Exportdaten werden heruntergeladen"]

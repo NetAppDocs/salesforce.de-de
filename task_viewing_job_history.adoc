@@ -1,0 +1,30 @@
+---
+sidebar: sidebar 
+permalink: task_viewing_job_history.html 
+keywords: netapp, saas backup, salesforce, viewing, job, history 
+summary: Sie können eine Liste aller in SaaS Backup für Salesforce abgeschlossenen, stornierten oder fehlgeschlagenen Jobs anzeigen. 
+---
+= Anzeigen des Jobverlaufs
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Sie können eine Liste aller in SaaS Backup für Salesforce abgeschlossenen, stornierten oder fehlgeschlagenen Jobs anzeigen.
+
+.Schritte
+. Klicken Sie im linken Navigationsbereich auf *Reporting*.image:reporting.jpg[""]Der Jobverlauf wird angezeigt.
+. Klicken Sie oben rechts auf *Filter*.image:filter.jpg[""]
+. Wählen Sie den Filter aus, mit dem Sie die Berichtsergebnisse verfeinern möchten. Sie können nach Backup-Richtlinie, Service oder Jobtyp filtern.
+. Klicken Sie in das Feld *Suche* und wählen Sie die spezifische Backup Policy, den Service oder den Jobtyp aus, für die Sie Ergebnisse sehen möchten. Fügen Sie bei Bedarf weitere Filter hinzu.image:reporting_filter.jpg[""]
+. Klicken Sie Auf *Filter Anwenden*.
+

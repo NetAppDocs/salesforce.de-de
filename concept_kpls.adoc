@@ -1,0 +1,61 @@
+---
+sidebar: sidebar 
+permalink: concept_kpls.html 
+keywords: netapp, saas backup, salesforce, known, problems, limitations, release, notes 
+summary: Sie sollten sich über bestimmte bekannte Probleme und Einschränkungen von SaaS Backup bewusst sein. 
+---
+= Bekannte Probleme und Einschränkungen
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Im Folgenden finden Sie eine Liste bekannter Probleme und Einschränkungen von SaaS Backup für Salesforce.
+
+
+
+== Aufzeichnungen, die bei der Sicherung einiger Objekte fehlen (Fehler #1169)
+
+Nach einem vollständigen Backup oder inkrementellem Backup eines Unternehmens kann es zu kleinen Abweichungen bei der Anzahl der insgesamt erkannten Datensätze im Vergleich zur Anzahl der insgesamt heruntergeladenen Datensätze kommen. Dies geschieht, wenn bestimmte Felder zur Abfrage hinzugefügt werden und die Salesforce-API daher nicht alle Datensätze zurückgeben soll.
+
+
+
+== Die Wiederherstellung der vor der Schemaänderung gesicherten Datensätze wird nicht unterstützt (Fehler #1170)
+
+SaaS Backup unterstützt keine Wiederherstellung von Datensätzen, die vor einer Schemaänderung gesichert wurden. Wenn dies versucht wird, schlägt die Wiederherstellung fehl, und die folgende Meldung wird angezeigt: *Wiederherstellung fehlgeschlagen aufgrund von Schemaänderungen*.
+
+
+
+== Objekte, die von Backups ausgeschlossen sind
+
+SaaS Backup für Salesforce sichert keine folgenden Objekte:
+
+* Objekte, die nicht mit Salesforce-APIs abgefragt werden können
+* Objekte, die keine generischen Abfragen unterstützen
+* Von Salesforce verwendete Verlaufsobjekte zur Verfolgung der Historie von Änderungen auf Feldebene in Datensätzen in Objekten.
+
+
+
+
+== Funktionen werden in der privaten Vorschau nicht unterstützt
+
+Die folgenden Funktionen werden in der privaten Preview-Version von SaaS Backup für Salesforce nicht unterstützt.
+
+* Salesforce-Chatter
+* Die folgenden Beziehungstypen
++
+** N:1- bis N:N-Beziehungen
+** Selbstbeziehungen
+** Zyklische Beziehungen
+
+
+

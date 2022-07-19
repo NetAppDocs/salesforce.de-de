@@ -1,0 +1,41 @@
+---
+sidebar: sidebar 
+permalink: task_performing_immediate_backup.html 
+keywords: netapp, saas backup, salesforce, managing, backups, immediate, backup, policies 
+summary: Mit SaaS Backup für Salesforce können Sie Ihre Daten sichern. 
+---
+= Ein sofortiges Backup durchführen
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Sie können jederzeit ein sofortiges Backup Ihrer Produktions- oder Sandbox-Instanz durchführen, wenn Sie für die Datensicherung als notwendig erachten.
+
+
+NOTE: Für die Testversion von SaaS Backup für Salesforce können Sie nur drei sofortige Backups pro Tag durchführen.
+
+.Schritte
+. Klicken Sie im linken Navigationsbereich auf *Services*.image:services.jpg[""]
+. Klicken Sie auf *Produktionsinstanzen* oder *Sandbox-Instanzen*.image:production_instances.gif[""]
+image:sandbox_instances.gif[""]
+. Wählen Sie die richtige Instanz aus, die Sie jetzt sichern möchten.
++
+.. Klicken Sie auf die oben genannte Zahl *GESCHÜTZTE INSTANZEN*, wenn die zu sicherende Instanz derzeit durch eine Sicherungsrichtlinie geschützt ist.
+.. Klicken Sie oben auf die Nummer *AUSSTEHENDE INSTANZEN*, wenn der Sicherungsstatus der Instanz, die Sie sichern möchten, aussteht,
+.. Klicken Sie auf die oben genannte Zahl *UNGESCHÜTZTE INSTANZEN*, wenn die Instanz, die Sie sichern möchten, derzeit durch eine Sicherungsrichtlinie ungeschützt ist.
+
+
+. Klicken Sie auf den Namen der Organisation.image:organization.jpg[""]
+. Klicken Sie Auf *Jetzt Sichern*. Es wird eine Meldung angezeigt, die angibt, dass die ausgewählten Organisationen in die Backup-Warteschlange verschoben werden.
+. Klicken Sie Auf *Absenden*.
+

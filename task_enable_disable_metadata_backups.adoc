@@ -1,0 +1,53 @@
+---
+sidebar: sidebar 
+permalink: task_enable_disable_metadata_backups.html 
+keywords: netapp, saas backup, salesforce, enable, enabling, disable, disabling, backup, backups, metadata, metadata backups 
+summary: Sie können Metadaten-Backups für Salesforce aktivieren oder deaktivieren. 
+---
+= Aktivieren und Deaktivieren von Metadaten-Backups
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Sie können Metadaten-Backups für Salesforce aktivieren oder deaktivieren.
+
+
+
+== Aktivieren von Metadaten-Backups
+
+Durch die Aktivierung von Metadaten-Backups werden Metadaten-Backups für alle Organisationen innerhalb eines Mandantenkontos erstellt.
+
+.Schritte
+. Klicken Sie Auf image:icon_gear.gif["Zahnrad-Symbol"] Und wählen Sie *Salesforce* unter *Diensteinstellungen* aus.
++
+image:select_salesforce_settings.gif["salesforce-Einstellungen"]
+
+. Klicken Sie auf *Metadatensicherung aktivieren*, um das Feature zu aktivieren. Nach Aktivierung auf Mandantenebene werden die Metadaten für alle Unternehmen gesichert.
+
+
+
+
+== Deaktivieren von Metadaten-Backups
+
+Sie können Metadaten-Backups auf Organisationsebene deaktivieren. Nachdem Metadatensicherungen für alle Unternehmen aktiviert sind, können Sie so kontrollieren, welche Unternehmen keine Metadaten-Backups haben.
+
+.Schritte
+. Um Metadaten-Backups zu deaktivieren, gehen Sie zu *Services*.
+. Wählen Sie *Produktionsinstanzen* oder *Sandbox-Instanzen* aus.
+. Wählen Sie die Anzahl der *geschützten* Instanzen aus.
+. Wählen Sie die Organisation aus, für die Sie Metadatensicherungen deaktivieren möchten.
+. Klicken Sie auf *Metadatensicherung*, um die Funktion auszuschalten.
++
+image:disable_metadata_backup.gif["Metadatensicherung deaktiviert"]
+
+

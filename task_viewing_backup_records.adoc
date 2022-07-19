@@ -1,0 +1,38 @@
+---
+sidebar: sidebar 
+permalink: task_viewing_backup_records.html 
+keywords: netapp, saas backup, salesforce, viewing, backup, records, count, summary 
+summary: In SaaS Backup für Salesforce können Sie die Anzahl Ihrer Backup-Datensätze in SaaS Backup für Salesforce überprüfen. 
+---
+= Anzeigen von Backup-Datensätzen
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Überprüfen Sie die Anzahl Ihrer Backup-Datensätze in SaaS Backup für Salesforce.
+
+Das erste vollständige Backup bietet die Gesamtanzahl der Backup-Datensätze auf Unternehmensebene. Nach diesem ersten Backup können Sie die Gesamtzahl der erstellten, aktualisierten und gelöschten Datensätze aus der *Backup Zusammenfassung* anzeigen.
+
+.Schritte
+. Klicken Sie im Dashboard auf die Anzahl der geschützten Instanzen (Produktion oder Sandbox).
+. Klicken Sie unter *Backup Summary* auf *View*.
++
+image:click_view_backup_summary.png["Anzeigen der Backup-Zusammenfassung"]
+
+. Zeigen Sie die Anzahl der erstellten und gelöschten Datensätze sowie die Anzahl aller Datensatzänderungen in der Tabelle an.
++
+image:record_count.png["Anzahl der Backup-Datensätze"]
+
++
+** *Objektname* - enthält alle Objekte in der Organisation.
+** *Erstellt* - Alle erstellten und aktualisierten Datensätze.
+** *Gelöscht* - Alle gelöschten Datensätze.
+** *Datensatzanzahl* - die Gesamtzahl der Backup-Änderungen für ein Objekt.
+
+
+

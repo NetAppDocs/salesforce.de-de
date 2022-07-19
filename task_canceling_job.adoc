@@ -1,0 +1,30 @@
+---
+sidebar: sidebar 
+permalink: task_canceling_job.html 
+keywords: netapp, saas backup, salesforce, canceling, jobs, backup, restore 
+summary: Sie können ein sofortiges Backup oder eine unmittelbare Wiederherstellung abbrechen. Sie können ein geplantes Backup nicht abbrechen. 
+---
+= Abbrechen eines Jobs
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Sie können ein sofortiges Backup oder eine unmittelbare Wiederherstellung abbrechen. Sie können ein geplantes Backup nicht abbrechen.
+
+
+toc::[]
+.Schritte
+. Klicken Sie im linken Navigationsbereich auf *Jobs*.
+. Suchen Sie unter *Zuletzt ausgeführte Jobs* den Job, den Sie abbrechen möchten.
+. Klicken Sie Auf *Abbrechen*.
+

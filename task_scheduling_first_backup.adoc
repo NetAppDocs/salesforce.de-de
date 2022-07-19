@@ -1,0 +1,44 @@
+---
+sidebar: sidebar 
+permalink: scheduling_first_backup.html 
+keywords: netapp, saas backup, salesforce, moving, organization, different, backup, tier 
+summary: Nachdem die Daten in der Sandbox oder in der Produktionsinstanz gesichert wurden, können Sie sie jederzeit auf ein anderes Backup Tier verschieben. 
+---
+= Planen eines Backups oder Ändern der Backup-Häufigkeit
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Wenn Sie eine Sandbox-Instanz in SaaS Backup für Salesforce hinzufügen, sind standardmäßig alle Daten in der Sandbox ungeschützt, bis Sie sie manuell in eine geschützte Backup-Tier verschieben. Nachdem die Daten in der Sandbox oder in der Produktionsinstanz gesichert wurden, können Sie jederzeit die Daten in ein anderes Backup Tier verschieben.
+
+.Schritte
+. Klicken Sie im linken Navigationsbereich auf *Services*.
++
+image:services.jpg[""]
+
+. Wenn Sie eine Organisation in Ihrer Produktionsinstanz verschieben möchten, klicken Sie auf *Produktionsinstanzen*.
++
+image:production_instances.gif[""]Wenn Sie eine Organisation in Ihrer Sandbox-Instanz verschieben möchten, klicken Sie auf *Sandbox-Instanzen*.
+
++
+image:sandbox_instances.gif[""]
+
+. Wählen Sie die richtige Instanzkategorie für die Organisation aus, die Sie verschieben möchten.
++
+** Klicken Sie auf die oben genannte Zahl *GESCHÜTZTE INSTANZEN*, wenn die Organisation, die Sie verschieben möchten, derzeit durch eine Sicherungsrichtlinie geschützt ist.
+** Klicken Sie auf die oben genannte Zahl *AUSSTEHENDE INSTANZEN*, wenn der Sicherungsstatus der Organisation, die Sie verschieben möchten, aussteht,
+** Klicken Sie auf die oben genannte Zahl *UNGESCHÜTZTE INSTANZEN*, wenn das Unternehmen, das Sie verschieben möchten, derzeit durch eine Sicherungsrichtlinie ungeschützt ist.
+
+
+. Wählen Sie die neue Ebene aus. Für Sandbox-Instanzen sind nur Tier-2- und Tier-3-Backups verfügbar. Sandbox-Instanzen können nicht in der Tier-1-Richtlinie gesichert werden. Produktionsinstanzen können sich entweder in der Tier-1-Richtlinie oder ungesichert sein. Produktionsinstanzen können nicht unter Tier-2- oder Tier-3-Richtlinien gesichert werden. Das Unternehmen wird auf die neue Backup-Ebene verlagert.
+

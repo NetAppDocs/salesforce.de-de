@@ -1,0 +1,40 @@
+---
+sidebar: sidebar 
+permalink: reference_backup_policies.html 
+keywords: netapp, saas backup, salesforce, managing, backups, backup, policies, tier, tiers 
+summary: Mit SaaS Backup für Salesforce können Sie Ihre Daten sichern. 
+---
+= Backup-Richtlinien
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+SaaS Backup für Salesforce verfügt über drei vordefinierte Tiers von Backup-Richtlinien. Diese Richtlinien variieren je nach Backup-Häufigkeit und Aufbewahrungsdauer. Produktionsinstanzen können nur durch die Tier-1-Richtlinie geschützt werden. Sandbox-Instanzen können durch Tier-2- und Tier-3-Richtlinien gesichert werden.
+
+Backup-Richtlinien mit *Active* Status sind Richtlinien, denen Elemente zum Backup zugewiesen wurden. Backup-Richtlinien mit dem Status *Inaktiv* haben keine Backup-Elemente zugewiesen.
+
+|===
+| Backup-Richtlinie | Sicherungshäufigkeit | Standardaufbewahrungszeitraum für Daten | Zum Schutz verfügbar 
+
+
+| Tier 1 | Einmal alle 12 Stunden | 3 Jahre | Produktionsinstanz 
+
+
+| Ebene 2 | Einmal alle 18 Stunden | 2 Jahre | Sandbox-Instanz 
+
+
+| Ebene 3 | Einmal alle 24 Stunden | 2 Jahre | Sandbox-Instanz 
+
+
+| Ungesichert | Nicht gesichert | Nicht gesichert | Produktion und Sandbox-Instanzen 
+|===

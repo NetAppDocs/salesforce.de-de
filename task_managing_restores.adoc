@@ -1,0 +1,151 @@
+---
+sidebar: sidebar 
+permalink: task_managing_restores.html 
+keywords: netapp, saas backup, salesforce, managing, data, metadata, restore, restores, restoring, recent, previous, backup, compare, comparison 
+summary: Mit SaaS Backup für Salesforce können Sie bereits gesicherte Daten wiederherstellen. 
+---
+= Wiederherstellen von Daten
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Mit SaaS Backup für Salesforce können Sie Daten und Metadaten wiederherstellen, die Sie zuvor gesichert haben.
+
+
+
+== Wiederherstellung des aktuellsten Backups
+
+.Schritte
+. Klicken Sie im linken Navigationsbereich auf *Services*.image:services.jpg[""]
+. Klicken Sie auf *Produktionsinstanzen* oder *Sandbox-Instanzen*.image:production_instances.gif[""]
+image:sandbox_instances.gif[""]
+. Klicken Sie auf die Anzahl der *geschützten Instanzen*.
+. Klicken Sie auf den Namen der Organisation.image:organization.jpg[""]Eine Liste von Objekten wird angezeigt. Wiederherstellbare Objekte werden standardmäßig angezeigt. Um die nicht wiederherstellbaren Objekte anzuzeigen, wählen Sie „nicht wiederherstellbare Objekte einschließen“. Nicht wiederherstellbare Objekte werden durch ein graues Symbol gekennzeichnet. Das rote Symbol zeigt Objekte an, die zwar im aktuellen Backup gesichert wurden, aber aus früheren Backups wiederhergestellt werden können.
+
+
+|===
+
+
+| Wiederherstellbares Objekt | image:recoverable_item.jpg[""] 
+
+
+| Nicht wiederherstellbares Objekt | image:nonrecoverable_item.jpg[""] 
+
+
+| Ausgefallenes Objekt | image:failed_item.jpg[""] 
+|===
+. Klicken Sie auf das Objekt, das die einzelnen Datensätze enthält, die Sie wiederherstellen möchten, und suchen Sie dann nach dem entsprechenden Datensatz.
+. Klicken Sie Auf *Wiederherstellen*.image:restore.jpg[""]
+. Wählen Sie Wiederherstellungsoptionen.
++
+.. *Mit Overwrite* wiederherstellen ist standardmäßig ausgewählt. Diese Option ersetzt die bestehende Version des Datensatzes, den Sie wiederherstellen. Wenn Sie die aktuelle Version des Datensatzes und die wiederhergestellte Version des Datensatzes beibehalten möchten, deaktivieren Sie diese Option.
+.. *Beziehung wiederherstellen* stellt die Kinder der Elterndaten zusammen mit dem Elternteil bis zu fünf Ebenen wieder her. Wenn Sie keine Beziehung wiederherstellen möchten, wird nur der übergeordnete Datensatz wiederhergestellt.
+.. *Daten exportieren* ermöglicht den Export von Daten aus einem Backup zu einem bestimmten Zeitpunkt. Sie können Daten auf Objektebene oder auf Organisationsebene exportieren. Weitere Informationen zum Export in die Datenfunktion finden Sie unter link:task_downloading_export_data.html["Exportdaten werden heruntergeladen"].
++
+
+NOTE: Exportaufträge sind nur sieben Tage nach Abschluss verfügbar.
+
+
+
+. Klicken Sie Auf *Absenden*.image:submit.jpg[""]
+
+
+
+
+== Wiederherstellung aus einem früheren Backup
+
+.Schritte
+. Klicken Sie im linken Navigationsbereich auf *Services*.image:services.jpg[""]
+. Klicken Sie auf *Produktionsinstanzen* oder *Sandbox-Instanzen*.image:production_instances.jpg[""]
+image:sandbox_instances.jpg[""]
+. Klicken Sie auf die Anzahl der *geschützten Instanzen*.
+. Klicken Sie auf den Namen der Organisation.image:organization.jpg[""]
+. Klicken Sie Auf *Backup-Verlauf Anzeigen*.
+. Wählen Sie diese Option aus, um Backups für einen bestimmten Zeitraum anzuzeigen oder ein Backup für ein bestimmtes Datum auszuwählen.
++
+.. Um Backups für einen bestimmten Zeitraum auszuwählen, klicken Sie in der rechten oberen Ecke auf das Dropdown-Menü neben *Ausgewählte Backups anzeigen* und wählen einen der vordefinierten Zeitbereiche aus.image:show_selected_backups.jpg[""]Eine Liste der Backups, die während des ausgewählten Bereichs aufgetreten sind, wird angezeigt.
+.. Um ein Backup für ein bestimmtes Datum auszuwählen, klicken Sie auf das Backup-Datum im Kalender, und wählen Sie dann das gewünschte Backup aus. Die Zahl im roten Kreis gibt die Anzahl der an diesem Datum durchgeführten Backups an. Die einzelnen grünen Kreise zeigen die einzelnen Backups an.
+
+
+. Klicken Sie auf das Objekt, das die einzelnen Datensätze enthält, die Sie wiederherstellen möchten, und suchen Sie dann nach dem entsprechenden Datensatz.
+. Klicken Sie Auf *Wiederherstellen*.image:restore.jpg[""]
+. Wählen Sie Wiederherstellungsoptionen.
++
+.. *Mit Overwrite* wiederherstellen ist standardmäßig ausgewählt. Diese Option ersetzt die bestehende Version des Datensatzes, den Sie wiederherstellen. Wenn Sie die aktuelle Version des Datensatzes und die wiederhergestellte Version des Datensatzes beibehalten möchten, deaktivieren Sie diese Option.
+.. *Beziehung wiederherstellen* stellt die Kinder der Elterndaten zusammen mit dem Elternteil bis zu fünf Ebenen wieder her. Wenn Sie keine Beziehung wiederherstellen möchten, wird nur der übergeordnete Datensatz wiederhergestellt.
+.. *Daten exportieren* ermöglicht den Export von Daten aus einem Backup zu einem bestimmten Zeitpunkt. Sie können Daten auf Objektebene oder auf Organisationsebene exportieren. Weitere Informationen zum Export in die Datenfunktion finden Sie unter link:task_downloading_export_data.html["Exportdaten werden heruntergeladen"].
++
+
+NOTE: Exportaufträge sind nur sieben Tage nach Abschluss verfügbar.
+
+
+
+. Klicken Sie Auf *Absenden*. Es wird eine Meldung angezeigt, die angibt, dass die ausgewählten Organisationen in die Jobwarteschlange gelegt werden.
+
+
+
+
+== Wiederherstellung von Metadaten
+
+Sie können Metadaten auf Organisationsebene oder auf granularer Ebene wiederherstellen.
+
+
+
+=== Wiederherstellung von Metadaten auf Unternehmensebene
+
+.Schritte
+. Gehen Sie zu *Services*.
+. Wählen Sie *Produktionsinstanzen* oder *Sandbox-Instanzen* aus.
+. Klicken Sie auf die Anzahl der *geschützten* Instanzen.
+. Klicken Sie auf den Namen der Organisation.
+. Klicken Sie Auf *Wiederherstellen*.
+. Wählen Sie eine Wiederherstellungsoption aus.
++
+.. Um Ihre Metadaten zu exportieren, wählen Sie *Metadaten exportieren*. Eine ZIP-Datei wird erstellt.
++
+
+NOTE: Export-Metadatenjobs sind 30 Tage nach Abschluss verfügbar.
+
+.. Um Ihre Metadaten wiederherzustellen, wählen Sie *Metadaten wiederherstellen*.
+
+
+. Klicken Sie Auf *Absenden*.
+
+
+
+
+=== Granulare Wiederherstellung von Metadaten auf Ebene
+
+.Schritte
+. Gehen Sie zu *Services*.
+. Wählen Sie *Produktionsinstanzen* oder *Sandbox-Instanzen* aus.
+. Klicken Sie auf die Anzahl der *geschützten* Instanzen.
+. Klicken Sie auf den Namen der Organisation.
+. Klicken Sie auf die Registerkarte *Metadatentypen & Components*. Eine Liste der Metadatentypen wird angezeigt.
+. Wählen Sie die Metadatentypen aus, die Sie wiederherstellen möchten.
+. Klicken Sie Auf *Wiederherstellen*.
+. Wählen Sie eine Wiederherstellungsoption aus.
++
+image:restore_options_export-restore_metadata.png["Optionen zum Exportieren und Wiederherstellen von Metadaten"]
+
++
+.. Um Ihre Metadaten zu exportieren, wählen Sie *Metadaten exportieren*. Eine ZIP-Datei wird erstellt.
++
+
+NOTE: Export-Metadatenjobs sind 30 Tage nach Abschluss verfügbar.
+
+.. Um Ihre Metadaten wiederherzustellen, wählen Sie *Metadaten wiederherstellen*.
+
+
+. Klicken Sie Auf *Absenden*.
+

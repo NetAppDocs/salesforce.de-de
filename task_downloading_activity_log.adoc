@@ -1,0 +1,28 @@
+---
+sidebar: sidebar 
+permalink: task_downloading_activity_log.html 
+keywords: netapp, saas backup, salesforce, viewing, downloading, activity, log 
+summary: Sie können das Aktivitätsprotokoll in eine .csv-Datei herunterladen. 
+---
+= Das Aktivitätsprotokoll wird heruntergeladen
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Sie können das Aktivitätsprotokoll in eine .csv-Datei herunterladen.
+
+.Schritte
+. Klicken Sie im linken Navigationsbereich auf *Reporting*.image:reporting.jpg[""]
+. Klicken Sie Auf *Aktivitätenprotokoll*.
+. Klicken Sie Auf *Download*.image:download.jpg[""]Das Aktivitätsprotokoll wird als .csv-Datei heruntergeladen.
+

@@ -1,0 +1,116 @@
+---
+sidebar: sidebar 
+permalink: task_downloading_export_data.html 
+keywords: netapp, saas backup, salesforce, viewing, downloading, export, data 
+summary: Sie können Anhänge, Ergebnisse und Statistiken über die Funktion „in Daten exportieren“ herunterladen. 
+---
+= Exportdaten werden heruntergeladen
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Sie können Daten auf Objekt- und Organisationsebene exportieren. Für jeden Export können Sie Anlagen, Ergebnisse und Statistiken aus einem früheren Backup herunterladen.
+
+
+
+== Export auf Objektebene
+
+.Schritte
+. Klicken Sie im linken Navigationsbereich auf *Services*.image:services.jpg[""]
+. Klicken Sie auf *Produktionsinstanzen* oder *Sandbox-Instanzen*.image:production_instances.gif["Bild zeigt das Feld Produktionsinstanzen"]
+image:sandbox_instances.gif["Bild zeigt das Feld Sandbox-Instanzen"]
+. Klicken Sie auf die Anzahl der *geschützten Instanzen*.image:protected_instances_screenshot.gif["Image zeigt geschützte Instanzen an"]
+. Klicken Sie auf den Namen der Organisation.image:organization.jpg["In der Abbildung wird angezeigt, wo auf den Namen des Unternehmens geklickt werden soll"]
+. Wählen Sie die Objekte aus, die Sie exportieren möchten, und klicken Sie auf *Wiederherstellen*.image:restore.jpg["Bild zeigt Schaltfläche Wiederherstellen"]
+. Wählen Sie bei Bedarf *Beziehungen wiederherstellen* oder *Dateien/Anhänge wiederherstellen* aus, um sie in Ihren Export zu integrieren.
++
+
+NOTE: Wenn Sie *Beziehungen wiederherstellen* auswählen, exportiert der Job das ausgewählte Objekt und alle zugehörigen Beziehungsobjekte. Wenn Sie nicht *Beziehungen wiederherstellen* auswählen, exportiert der Job nur die ausgewählten Objekte.
+
+. Klicken Sie Auf *Absenden*.
+. Klicken Sie in der linken Navigationsleiste auf *Jobs*, um Ihren Wiederherstellungsauftrag anzuzeigen.
+. Klicken Sie auf *Total Objects* oder *successful*, um die Jobdetails und die Download-Optionen anzuzeigen.
++
+.. Für den Export von Jobs mit *Dateien/Anlagen wiederherstellen* stehen Ihnen drei Download-Optionen zur Verfügung:
++
+... Klicken Sie für die Ergebnisse auf image:export_data_download_link.gif["Bild zeigt die Schaltfläche zum Herunterladen von Daten"].
++
+.... Suchen Sie in Ihrem Finder die heruntergeladene Datei .tar.gz.
+.... Entpacken Sie die Datei, um eine .tar-Datei zu erhalten.
+.... Extrahieren Sie die .tar-Datei, um DIE EXCEL-Ergebnisse anzuzeigen.
+
+
+... Klicken Sie bei Anlagen auf image:attachments_download_link.gif["Bild zeigt den Download-Link für Anhänge"].
++
+.... Suchen Sie in Ihrem Finder die heruntergeladene Datei .tar.gz.
+.... Entpacken Sie die Datei, um eine .tar-Datei zu erhalten.
+.... Extrahieren Sie die .tar-Datei, um die Anhänge anzuzeigen.
+
+
+... Klicken Sie für einen Statistikbericht auf image:download.gif["Bild zeigt Download-Link"].
+
+
+.. Für Exportaufträge ohne *Dateien/Anlagen wiederherstellen* stehen Ihnen zwei Download-Optionen zur Verfügung:
++
+... Klicken Sie für die Ergebnisse auf image:export_data_download_link.gif["Bild zeigt den Link zum Herunterladen von Exportdaten"].
+... Klicken Sie für einen Statistikbericht auf image:download.gif["Bild zeigt Download-Link"].
+
+
+
+
+
+
+
+
+== Export auf Organisationsebene
+
+.Schritte
+. Klicken Sie im linken Navigationsbereich auf *Services*.image:services.jpg[""]
+. Klicken Sie auf *Produktionsinstanzen* oder *Sandbox-Instanzen*.image:production_instances.gif["Bild zeigt das Feld Produktionsinstanzen"]
+image:sandbox_instances.gif["Bild zeigt das Feld Sandbox-Instanzen"]
+. Klicken Sie auf die Anzahl der *geschützten Instanzen*.image:protected_instances_screenshot.gif["Image zeigt geschützte Instanzen an"]
+. Wählen Sie die *Stufe* aus.image:tier_selection.gif["Bild zeigt das Dropdown-Menü der Ebene"]
+. Klicken Sie auf *Wiederherstellen* und dann auf die Option *Daten exportieren*.image:restore_export_data.gif["Bild zeigt das Dropdown-Menü Wiederherstellen mit Exportoption"]
+. Klicken Sie bei Bedarf auf *Dateien/Anhänge wiederherstellen*, um sie in Ihren Export zu integrieren.
+. Klicken Sie Auf *Absenden*.
+. Klicken Sie in der linken Navigationsleiste auf *Jobs*, um Ihren Wiederherstellungsauftrag anzuzeigen.
+. Klicken Sie auf *Total Organiations* oder *successful*, um die Jobdetails und die Download-Optionen anzuzeigen.
++
+.. Für den Export von Jobs mit *Dateien/Anlagen wiederherstellen* stehen Ihnen drei Download-Optionen zur Verfügung:
++
+... Klicken Sie für die Ergebnisse auf image:export_data_download_link.gif["Bild zeigt die Schaltfläche zum Herunterladen von Daten"].
++
+.... Suchen Sie in Ihrem Finder die heruntergeladene Datei .tar.gz.
+.... Entpacken Sie die Datei, um eine .tar-Datei zu erhalten.
+.... Extrahieren Sie die .tar-Datei, um DIE EXCEL-Ergebnisse anzuzeigen.
+
+
+... Klicken Sie bei Anlagen auf image:attachments_download_link.gif["Bild zeigt den Download-Link für Anhänge"].
++
+.... Suchen Sie in Ihrem Finder die heruntergeladene Datei .tar.gz.
+.... Entpacken Sie die Datei, um eine .tar-Datei zu erhalten.
+.... Extrahieren Sie die .tar-Datei, um die Anhänge anzuzeigen.
+
+
+... Klicken Sie für einen Statistikbericht auf image:download.gif["Bild zeigt Download-Link"].
+
+
+.. Für Exportaufträge ohne *Dateien/Anlagen wiederherstellen* stehen Ihnen zwei Download-Optionen zur Verfügung:
++
+... Klicken Sie für die Ergebnisse auf image:export_data_download_link.gif["Bild zeigt den Link zum Herunterladen von Exportdaten"].
+... Klicken Sie für einen Statistikbericht auf image:download.gif["Bild zeigt Download-Link"].
+
+
+
+
+

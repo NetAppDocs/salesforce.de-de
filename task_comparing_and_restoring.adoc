@@ -1,0 +1,57 @@
+---
+sidebar: sidebar 
+permalink: task_comparing_restoring.html 
+keywords: netapp, saas backup, salesforce, managing, restores, comparing, restoring, recent, previous, backup, compare, comparison 
+summary: Mit SaaS Backup für Salesforce können Sie zuvor gesicherte Daten mit denen vergleichen und wiederherstellen. 
+---
+= Vergleichen und Wiederherstellen von Backup-Unterschieden
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Mit SaaS Backup für Salesforce lassen sich Backup-Unterschiede vergleichen und wiederherstellen.
+
+.Schritte
+. Klicken Sie im linken Navigationsbereich auf *Jobs*.image:jobs.jpg["Schaltfläche Jobs"]
+. Wählen Sie unter *Zuletzt abgeschlossene Aufträge* das Backup aus, das das Objekt enthält, für das Sie Backups vergleichen möchten.
+. Klicken Sie auf das Unternehmen.
+. Wählen Sie das Objekt aus, für das Sie Backups vergleichen möchten.
+. Klicken Sie auf das Vergleichssymbol.image:compare_icon.jpg["Screenshot mit hervorgehobendem Vergleichssymbol"]
+. Wählen Sie neben *Vorheriges Backup* das erste Datum des Backups aus, das Sie für den Vergleich verwenden möchten.
+. Wählen Sie neben *Aktuelles Backup* das zweite Datum des Backups aus, das Sie für den Vergleich verwenden möchten.
+. Klicken Sie auf *VERGLEICHEN*.image:compare.jpg["Schaltfläche „Vergleichen“"]
++
+
+NOTE: Wenn keine Unterschiede zwischen den beiden ausgewählten Backups bestehen, wird der Vergleichsauftrag nicht erstellt.
+
+. Klicken Sie auf *Status der Aufträge anzeigen*.
++
+Sobald der Job abgeschlossen ist, wird er unter *Zuletzt abgeschlossene Jobs* angezeigt.
+
+. Klicken Sie entweder auf die Anzahl der Organisationen oder auf die Nummer erfolgreich.image:completed_compare_job_click_arrow.gif["Abgeschlossen, vergleichen Sie die Position, auf die Sie klicken, um Ergebnisse zu erhalten"]
++
+Es wird ein Fenster mit dem Job-Status angezeigt.image:compare_job_results_window_arrow.gif["Fenster Ergebnisse der Jobs vergleichen"]
+
+. Klicken Sie auf den Objektnamen, um die Ergebnisse anzuzeigen. Die Auftragsübersicht vergleichen wird zusammen mit der Anzahl der Datensätze angezeigt, die im Objekt zwischen den beiden ausgewählten Backups erstellt, aktualisiert und gelöscht wurden. Sie haben die Möglichkeit, die Jobdetails vergleichen herunterzuladen.
++
+.. Klicken Sie auf, um die Jobdetails zum Vergleich herunterzuladen image:download_compare_results.gif["Symbol für Download vergleichen Sie die Ergebnisse"].
+.. Entpacken Sie die Datei, um die Ergebnisse anzuzeigen.
+
+
+. Klicken Sie auf *WIEDERHERSTELLEN*.
+. Wählen Sie *AKTUALISIERT*, um alle aktualisierten Datensätze wiederherzustellen. Wählen Sie *GELÖSCHT*, um alle gelöschten Datensätze wiederherzustellen. Sie können auch beide Optionen auswählen, wenn die Optionen verfügbar sind.
+. Klicken Sie auf *SUMMBIT*.
++
+Der Job wird ohne Überschreiben und ohne Beziehung wiederhergestellt.
+
+
